@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "amplesoft";
+    src: url(./fonts/AMPLESOFT.OTF);
+}
+
+:root{
+    --v-bkg-color1: #1d212a;
+    --v-bkg-color2: #212832;
+    --v-front-color-menu: #dff0f6;
+    --v-front-color1: #00adb4;
+    --v-front-color2: #393d46;
+    --v-primary-font: "amplesoft"; 
+}
+
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    background-color: var(--v-bkg-color1);
+    color: var(--v-front-color1);
+    font-family: var(--v-primary-font);
+    font-weight: 100;
+    font-size: 22px;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    height: 60px;
+    width:95vw;
+    margin:0 auto;
+    align-items: center;
+}
+.menu ul{
+    list-style: none;
+}
+.menu li{
+    display:inline-block;
+    
+}
+.menu a{
+    padding: 8px 20px;
+    color: var(--v-front-color-menu);
+    text-decoration: none;
+}
+.menu a:visited{
+    color: var(--v-front-color-menu);
+}
+.download-cv button{
+    font-size: 14px;
+    padding: 6px 10px;
+    cursor: pointer;
+    background-color: var(--v-bkg-color2);
+    color: var(--v-front-color1);
+    border-radius: 5px;
+    border: 1px solid var(--v-front-color1);
+}
+.download-image{
+    width: 20px;
+    background-color: none;
+}
