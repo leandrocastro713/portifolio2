@@ -52,11 +52,6 @@ header{
     height: 60px;
     width:95vw;
     margin:0 auto;
-    /* background-image: url("./img/waves-1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    background-color: var(); */
     align-items: center;
 }
 header h1{
@@ -73,16 +68,20 @@ header h1{
 .menu a{
     padding: 8px 20px;
     color: var(--v-front-color-menu);
+    font-weight: 100;
     text-decoration: none;
 }
 .menu a:visited{
     color: var(--v-front-color-menu);
 }
+.download-cv{
+    display:inline-block;
+}
 .download-cv button{
     display:flex;
     align-items: center;
     font-size: 14px;
-    padding: 2px 10px 6px 15px;
+    padding: 6px 10px 6px 15px;
     cursor: pointer;
     background-color: var(--v-bkg-color2);
     color: var(--v-front-color1);
@@ -105,15 +104,81 @@ main{
     margin:0 auto;
     align-items: center;
     padding: 20%;
-    background-image: url("./img/waves-1.jpg");
+    background-image: url("./img/waves2.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-blend-mode: lighten;
-    background-color: var(--v-bkg-color1);
+    /* background-blend-mode: lighten; */
+    /* background-color: var(--v-front-color2); */
+}
+.hello{
+    color: var(--v-front-color-menu);
 }
 main h1{
+    color: var(--v-front-color-menu);
     font-size: 150px;
     font-weight: 800;
-    opacity: 90%;
-    color: var(--v-front-color2);
+    opacity: 70%;
 }
+main h2{
+    color: var(--v-front-color-menu);
+    font-size: 42px;
+    font-weight: 400;
+}
+.hello span{
+    color:#00adb4;
+    font-size: 42px;
+    font-weight: 400;
+}
+main h3{
+    color: var(--v-front-color-menu);
+    font-size: 20px;
+    font-weight: 200;
+}
+.bar{
+    height:4px;
+    width:200px;
+    border-top: 2px solid var(--v-front-color1);
+    border-bottom: 2px solid var(--v-front-color1);;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* FOLLOW ASIDE  */
+.follow-aside{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    height:430px;
+    width:50px;
+}
+.follow-text{
+    transform: rotate(90deg);
+    /* width: 150px; */
+    
+}
+.follow-text p{
+    color: var(--v-front-color-menu);
+    font-size: 18px;
+    font-weight: 200;
+    width:80px;
+}
+.follow-bar{
+    height:80px;
+    width:4px;
+    border-left: 2px solid var(--v-front-color1);
+    border-right: 2px solid var(--v-front-color1);;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.follow-icons{
+    display:flex;
+    flex-direction: column;
+}
+.follow-icons img{
+    width:24px;
+    margin:8px;
+}
+
