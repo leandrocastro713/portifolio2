@@ -97,9 +97,10 @@ header h1{
 
 /* M A I N  */
 main{
+    position:relative;
     display:flex;
-    justify-content: none;
-    height: 300px;
+    justify-content: space-evenly;
+    height:300px;
     width:95vw;
     margin:0 auto;
     align-items: center;
@@ -107,8 +108,9 @@ main{
     background-image: url("./img/waves2.png");
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-blend-mode: lighten; */
-    /* background-color: var(--v-front-color2); */
+    background-blend-mode: lighten;
+    border-bottom: 4px solid var(--v-front-color1);
+    /* background-color: var(--v-bkg-color2); */
 }
 .hello{
     color: var(--v-front-color-menu);
@@ -143,14 +145,28 @@ main h3{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
+/* PIC  */
+.pic img{
+    width:150px;
+    margin: 0 70px;
+    z-index: 4;
+}
+.losango{
+    width:250px; height: 250px;
+    border: 4px solid var(--v-front-color1);
+    border-radius: 40px;
+    position:absolute;
+    z-index: 2;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
 /* FOLLOW ASIDE  */
 .follow-aside{
     display:grid;
     grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
     justify-content: space-between;
-    height:430px;
+    height:300px;
     width:50px;
 }
 .follow-text{
@@ -172,10 +188,12 @@ main h3{
     border-radius: 6px;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 35px;
 }
 .follow-icons{
     display:flex;
     flex-direction: column;
+    margin-left: 15px;
 }
 .follow-icons img{
     width:24px;
