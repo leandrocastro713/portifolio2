@@ -147,18 +147,20 @@ main h3{
 }
 /* PIC  */
 .pic img{
+    position:relative;
     width:150px;
     margin: 0 70px;
     z-index: 4;
 }
 .losango{
-    width:250px; height: 250px;
-    border: 4px solid var(--v-front-color1);
-    border-radius: 40px;
-    position:absolute;
+    width:300px; height: 250px;
+    /* border: 4px solid var(--v-front-color1);
+    border-radius: 40px; */
+    position:relative;
     z-index: 2;
-    margin-top: 120px;
-    margin-bottom: 120px;
+    margin-bottom: -120px;
+    /* margin-bottom: 120px; */
+    margin-right: 0;
 }
 /* FOLLOW ASIDE  */
 .follow-aside{
@@ -199,4 +201,27 @@ main h3{
     width:24px;
     margin:8px;
 }
-
+.citar{
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    width:95%;
+    height: 100px;
+    margin:0 auto;
+}
+.citar q{
+    position:relative;
+    left: 60px;
+    top: 40px;
+    color: #dff0f6;
+    font-weight: 200;
+    font-size: 16px;
+}
+.citar i{
+    position:relative;
+    left: 60px;
+    top: 40px;
+    color: #dff0f6;
+    font-size: 14px;
+    font-weight: 200;
+}
