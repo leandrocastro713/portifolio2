@@ -50,7 +50,7 @@ header{
     display:flex;
     justify-content: space-between;
     height: 60px;
-    width:95vw;
+    width:1000px;
     margin:0 auto;
     align-items: center;
 }
@@ -101,7 +101,7 @@ main{
     display:flex;
     justify-content: space-evenly;
     height:300px;
-    width:95vw;
+    width:1000px;
     margin:0 auto;
     align-items: center;
     padding: 20%;
@@ -205,23 +205,64 @@ main h3{
     display:flex;
     flex-direction: column;
     position:relative;
-    width:95%;
-    height: 100px;
+    width:1000px;
+    height: 180px;
     margin:0 auto;
+    background-color: var(--v-bkg-color2);
+    overflow-x: hidden;
 }
 .citar q{
     position:relative;
     left: 60px;
-    top: 40px;
+    top: 60px;
     color: #dff0f6;
     font-weight: 200;
     font-size: 16px;
 }
 .citar i{
     position:relative;
-    left: 60px;
-    top: 40px;
+    left: 65px;
+    top: 35px;
     color: #dff0f6;
     font-size: 14px;
     font-weight: 200;
+}
+/* W H A T  */
+.what, .what-title{
+    display:flex;
+    width:1000px;
+    margin:0 auto;
+    justify-content: center;
+}
+.what-title h1, .what-title h2 {
+    color:#dff0f6;
+    font-weight: 600;
+    margin-top: -14px;
+    z-index: 10;    
+    width: 259px;
+}
+.what-title h2{
+    color: #393d46;
+    font-weight: 800;
+    z-index: 9;
+    font-size: 58px;
+    margin-left: -326px;
+    margin-top: -37px;
+}
+.what-thumbs{
+    display:flex;
+    width: 95%;
+    height: 300px;
+    max-width: 1000px;
+    margin:0 auto;
+    justify-content: space-evenly;
+}
+.thumb-block{
+    display:flex;
+    flex-direction: column;
+    width:150px;
+    height:150px;
+    margin-top: 50px;
+    border-radius: 15px;
+    background-color: #212832;
 }
