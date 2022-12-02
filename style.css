@@ -260,10 +260,15 @@ main h3{
 .thumb-block{
     display:flex;
     flex-direction: column;
-    width:150px;
-    height:150px;
+    width:200px;
+    justify-content: center;
+    align-items: center;
+    height:200px;
     margin-top: 50px;
     border-radius: 15px;
     background-color: #212832;
     box-shadow: inset 2px 4px white;
+}
+.thumb-block img{
+    width: 80px;
 }
