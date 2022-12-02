@@ -265,4 +265,5 @@ main h3{
     margin-top: 50px;
     border-radius: 15px;
     background-color: #212832;
+    box-shadow: inset 2px 4px white;
 }
