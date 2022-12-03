@@ -159,7 +159,6 @@ main h3{
     width:350px; 
     position:relative;
     z-index: 2;
-    margin-bottom: ;
 }
 /* FOLLOW ASIDE  */
 .follow-aside{
@@ -255,15 +254,7 @@ main h3{
 .what-thumbs-1{
     display:flex;
     width: 1000px;
-    height: 300px;
-    margin:0 auto;
-    justify-content: space-evenly;
-}
-.what-thumbs-2{
-    display:flex;
-    width: 1000px;
-    height: 300px;
-    max-width: 1000px;
+    height: 350px;
     margin:0 auto;
     justify-content: space-evenly;
 }
@@ -292,7 +283,7 @@ main h3{
 }
 
 
-/* W H A T  */
+/* S K I L L S  */
 .skills, .skills-title{
     display:flex;
     width:1000px;
@@ -301,6 +292,7 @@ main h3{
     justify-content: center;
 }
 .skills{
+    background-image: linear-gradient(90deg, var(--v-front-color2),var(--v-bkg-color1));
     background-color: #484a51;
 }
 .skills-title h1, .skills-title h2 {
@@ -320,14 +312,144 @@ main h3{
     margin-top: -37px;
 }
 .skills-description{
+    background-image: linear-gradient(90deg, var(--v-front-color2),var(--v-bkg-color1));
     display:flex;
     width:1000px;
-    height: 400px;
+    height: 340px;
     margin:0 auto;
     line-height: 2;
     background-color: #484a51;
 }
 .skills-description p{
     font-size: 16px;
+}
+.skills-img{
+    width:250px;
+}
+.skills-img img{
+    margin-top: -50px;
+    width: 235px;
+}
+.skills-names{
+    position:relative;
+    margin: 40px 15px 0 115px;
+}
+.skills-gauges{
+    position:relative;
+    margin-top: 40px;
+}
+.gauge-background{
+    background-color: #212832;
+    width:200px;
+}
+.percent p{
+    padding: 4px;
+    text-align: right;
+    color:#00adb4;
+    font-size: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.s-html p{
+    animation:fill-html 6s infinite;
+    width:80%;
+    color:#1d212a;
+    background-color: #00adb4;
+}
+@keyframes fill-html{
+    0%{
+        width:0;
+    }
+    30%{
+        width: 80%;
+    }
+    100%{
+        width:80%;
+    }
+}
+.s-css p{
+    animation:fill-css 6s infinite;
+    width:60%;
+    color:#1d212a;
+    background-color: #00adb4;
+}
+@keyframes fill-css{
+    0%{
+        width:0;
+    }
+    32%{
+        width: 60%;
+    }
+    100%{
+        width:60%;
+    }
+}
+.s-js p{
+    animation:fill-js 6s infinite;
+    width:50%;
+    color:#1d212a;
+    background-color: #00adb4;
+}
+@keyframes fill-js{
+    0%{
+        width:0;
+    }
+    34%{
+        width: 50%;
+    }
+    100%{
+        width:50%;
+    }
+}
+.s-photoshop p{
+    animation:fill-photoshop 6s infinite;
+    width:80%;
+    color:#1d212a;
+    background-color: #00adb4;
+}
+@keyframes fill-photoshop{
+    0%{
+        width:0;
+    }
+    40%{
+        width: 80%;
+    }
+    100%{
+        width:80%;
+    }
+}
+.s-after p{
+    animation:fill-after 6s infinite;
+    width:70%;
+    color:#1d212a;
+    background-color: #00adb4;
+}
+@keyframes fill-after{
+    0%{
+        width:0;
+    }
+    45%{
+        width: 70%;
+    }
+    100%{
+        width:70%;
+    }
+}
+.s-premiere p{
+    animation:fill-premiere 6s infinite;
+    width:50%;
+    color:#1d212a;
+    background-color: #00adb4;
+}
+@keyframes fill-premiere{
+    0%{
+        width:0;
+    }
+    50%{
+        width: 50%;
+    }
+    100%{
+        width:50%;
+    }
 }
 
