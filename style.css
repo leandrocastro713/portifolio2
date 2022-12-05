@@ -151,8 +151,7 @@ main h3{
 }
 .pic img{
     position:relative;
-    width:150px;
-    margin: 0 70px;
+    margin: 301px -65px 0px;
     z-index: 4;
 }
 .losango{
@@ -461,13 +460,13 @@ main h3{
     display:flex;
     flex-direction: column;
     width:1000px;
-    height: 600px;
+    height: 650px;
     margin:0 auto;
     justify-content: center;
 }
 .recent-works{
     background-image: url(./img/background-2.jpg);
-    background-image: linear-gradient(270deg, var(--v-bkg-color1),rgba(46, 46, 46, 0.936),var(--v-bkg-color1)), url(./img/background-2.jpg);
+    background-image: radial-gradient(var(--v-bkg-color2),var(--v-bkg-color1)), url(./img/background-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: hard-light;
@@ -480,7 +479,7 @@ main h3{
     position: relative;
     font-weight: 600;
     text-align: center;
-    margin-top: -154px;
+    margin-top: -262px;
     z-index: 10;
 }
 .recent-title h2{
@@ -501,8 +500,9 @@ main h3{
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 1000px;
-    margin-top: -26px;
+    margin-top: -90px;
     justify-content: center;
+    z-index: 8;
 }
 .recent-thumbs-block{
     cursor:pointer;
@@ -527,10 +527,74 @@ main h3{
     padding: 3px 10px;
     color: #00adb4;
     background-color: rgb(33, 40, 50,.8);
-    top: -35px;
+    top: -36px;
     opacity:0;
 }
 .recent-thumbs-block p:hover{
     transition: ease 400ms;
     opacity:1;
+}
+.sombra1{
+    width: 600px;
+    position: sticky;
+    display: inline-block;
+    margin: -399px 486px -115px;
+}
+
+
+/* C O N T A C T   M E  */
+.contact, .contact-title{
+    display:flex;
+    flex-direction: column;
+    width:1000px;
+    height: 237px;
+    margin:0 auto;
+    justify-content: center;
+}
+.contact{
+    background-image: radial-gradient(var(--v-bkg-color2),var(--v-front-color1));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: hard-light;
+}
+.contact-title{
+    height: 50px;
+}
+.contact-title h1, .contact-title h2 {
+    color: #dff0f6;
+    position: relative;
+    font-weight: 600;
+    text-align: center;    
+    margin-top: -55px;
+    z-index: 10;
+}
+.contact-title h2{
+    position: relative;
+    color: rgb(48 48 48);
+    font-weight: 800;
+    text-align: center;
+    z-index: 9;
+    font-size: 58px;
+    margin-top: -51px;
+}
+.contact-title h1:hover{
+    transition: ease 200ms;
+    text-shadow: 2px 2px 6px rgb(22, 22, 22);
+}
+.contact img{
+    width: 412px;
+    height: 327px;
+    margin: -140px 312px -66px;
+}
+.contact-email{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: -106px;
+}
+.contact-phone{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: -69px;
 }
