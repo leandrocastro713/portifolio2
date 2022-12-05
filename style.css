@@ -598,3 +598,17 @@ main h3{
     justify-content: center;
     top: -69px;
 }
+.contact-email img{
+    position:relative;
+    display:flex;
+    width:20px;
+    height: 20px;
+    top: -20px;
+}
+.contact-phone img{
+    display:flex;
+    position:relative;
+    width:20px;
+    height: 20px;
+    top: -20px;
+}
