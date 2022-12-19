@@ -96,13 +96,16 @@ header h1{
 .download-cv button{
     display:flex;
     align-items: center;
-    font-size: 14px;
     padding: 6px 10px 6px 15px;
     cursor: pointer;
     background-color: var(--v-bkg-color2);
     color: var(--v-front-color1);
     border-radius: 8px;
     border: 1px solid var(--v-front-color1);
+}
+.download-cv a{
+    font-size: .8rem;
+    text-decoration: none;
 }
 .download-image{
     width: 20px;
