@@ -84,7 +84,7 @@ header h1{
     text-decoration: none;
 }
 .menu a:hover{
-    filter:drop-shadow(1px 1px 10px #00adb4);
+    filter:drop-shadow(3px 2px 2px #00adb4);
 }
 .menu a:visited{
     color: var(--v-front-color-menu);
@@ -174,19 +174,25 @@ main h3{
 }
 .pic img{
     transition:ease 200ms;
+    animation: ease flip-horizontal 5s infinite;
     position:relative;
     margin-bottom: -301px;
     z-index: 4;
 }
 .pic img:hover{
-    filter:drop-shadow(1px 3px 16px #00adb4);
+    animation-play-state: paused;
+    /* filter:drop-shadow(1px 3px 16px #00adb4); */
 }
 /* .losango{
     width:350px; 
     position:relative;
     z-index: 2;
 } */
-
+@keyframes flip-horizontal{
+    to{
+        transform: rotateY(1turn);;
+    }
+}
 
 /* --------------------------------------------------------- */
 /* FOLLOW ASIDE  */
@@ -742,11 +748,26 @@ main h3{
     text-shadow: 2px 2px 6px rgb(22, 22, 22);
 }
 .contact img{
+    animation: ease flip-hor-ver 5s infinite;
     position: relative;
     display: inline;
     margin: 0 auto;
     width: 412px;
     height: 327px;
+}
+@keyframes flip-hor-ver{
+    50%{
+        transform:rotateY(1turn);
+    }
+    55%{
+        transform:scale(1.1);
+    }
+    65%{
+        transform:scale(1);
+    }
+    100%{
+        transform:rotateZ(1turn);
+    }
 }
 
 .contact-email{
@@ -764,6 +785,7 @@ main h3{
     top: 0px;
 }
 .contact-email img{
+    animation: ease flip-horizontal 3s infinite;
     position: relative;
     margin: 0 auto;
     display: flex;
@@ -783,6 +805,7 @@ main h3{
     width: 200px;
 }
 .contact-phone img{
+    animation: ease flip-horizontal 3s infinite;
     position: relative;
     margin: 0 auto;
     display: flex;
