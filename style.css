@@ -587,28 +587,44 @@ main h3{
     margin: -140px 312px -66px;
 }
 .contact-email{
-    display: flex;
+    display: inline-block;
     position: relative;
+
+    /* flex-direction: column; */
+    margin:0 auto;
+
     justify-content: center;
     top: -106px;
 }
 .contact-phone{
-    display: flex;
+    display: inline-block;
     position: relative;
+
+
+    /* flex-direction: column; */
+    margin:0 auto;
     justify-content: center;
     top: -69px;
 }
+.contact-email p{
+    display: inline-block;
+    position: relative;
+}
+.contact-phone p{
+    display: inline-block;
+    position: relative;
+
+}
+
 .contact-email img{
     position:relative;
-    display:flex;
+    display:inline-block;
     width:20px;
     height: 20px;
-    top: -20px;
 }
 .contact-phone img{
-    display:flex;
+    display:inline;
     position:relative;
     width:20px;
     height: 20px;
-    top: -20px;
 }
