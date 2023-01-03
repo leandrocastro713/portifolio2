@@ -45,7 +45,15 @@ body{
     background-color: var(--v-bkg-color1);
 
 }
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: proximity;
+}
+
+
+/* --------------------------------------------------------- */
 /* H E A D E R  */
+/* --------------------------------------------------------- */
 header{
     display:flex;
     justify-content: space-between;
@@ -53,12 +61,15 @@ header{
     width:1000px;
     margin:0 auto;
     align-items: center;
+    z-index: 20;
 }
 header h1{
     font-weight: 800;
+    margin-left: 10px;
 }
 
 .menu ul{
+    
     list-style: none;
 }
 .menu li{
@@ -69,24 +80,32 @@ header h1{
     padding: 8px 20px;
     color: var(--v-front-color-menu);
     font-weight: 100;
+    transition:ease 200ms;
     text-decoration: none;
+}
+.menu a:hover{
+    filter:drop-shadow(3px 2px 2px #00adb4);
 }
 .menu a:visited{
     color: var(--v-front-color-menu);
 }
 .download-cv{
     display:inline-block;
+    margin-right: 10px;
 }
 .download-cv button{
     display:flex;
     align-items: center;
-    font-size: 14px;
     padding: 6px 10px 6px 15px;
     cursor: pointer;
     background-color: var(--v-bkg-color2);
     color: var(--v-front-color1);
     border-radius: 8px;
     border: 1px solid var(--v-front-color1);
+}
+.download-cv a{
+    font-size: .8rem;
+    text-decoration: none;
 }
 .download-image{
     width: 20px;
@@ -95,7 +114,11 @@ header h1{
     background-color: none;
 }
 
+
+
+/* --------------------------------------------------------- */
 /* M A I N  */
+/* --------------------------------------------------------- */
 main{
     position:relative;
     display:flex;
@@ -150,16 +173,30 @@ main h3{
     width: 305px;
 }
 .pic img{
+    transition:ease 200ms;
+    animation: ease flip-horizontal 5s infinite;
     position:relative;
-    margin: 301px -65px 0px;
+    margin-bottom: -301px;
     z-index: 4;
 }
-.losango{
+.pic img:hover{
+    animation-play-state: paused;
+    /* filter:drop-shadow(1px 3px 16px #00adb4); */
+}
+/* .losango{
     width:350px; 
     position:relative;
     z-index: 2;
+} */
+@keyframes flip-horizontal{
+    to{
+        transform: rotateY(1turn);;
+    }
 }
+
+/* --------------------------------------------------------- */
 /* FOLLOW ASIDE  */
+/* --------------------------------------------------------- */
 .follow-aside{
     display:grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -224,7 +261,12 @@ main h3{
     font-size: 14px;
     font-weight: 200;
 }
+
+
+
+/* --------------------------------------------------------- */
 /* W H A T  */
+/* --------------------------------------------------------- */
 .what, .what-title{
     display:flex;
     width:1000px;
@@ -250,7 +292,7 @@ main h3{
     margin-left: -353px;
     margin-top: -37px;
 }
-.what-thumbs-1{
+.what-thumbs{
     display:flex;
     width: 1000px;
     height: 350px;
@@ -260,29 +302,77 @@ main h3{
 .thumb-block{
     display:flex;
     flex-direction: column;
-    width:200px;
+    width:200px; 
+    height:200px;
     justify-content: center;
     align-items: center;
-    height:200px;
     margin-top: 50px;
     border-radius: 15px;
     background-color: #212832;
+    overflow-y: hidden;
     box-shadow: inset 2px 4px rgb(48, 48, 48);
     cursor: pointer;
+    
 }
-.thumb-block:hover{
-    transition: ease 200ms;
-    background-color: #393d46;
-}
+/* .thumb-block:hover .knowledges-popup{
+    animation: slide-up forwards ease 240ms;
+} */
 .thumb-block img{
     width: 80px;
 }
 .thumb-block p{
-    font-size: 15px;
+    font-stretch: condensed;
+    font-size: 14px;
+}
+.knowledges-popup{
+    filter:drop-shadow(1px 1px 10px #00adb4);
+    background-color: #393d46f5;
+    transition: ease 200ms;
+    opacity:0;
+    background-image: linear-gradient(#00adb4, #212832), url('./img/knowledges-thumb.webp');
+    background-repeat: no-repeat;
+    background-blend-mode: color;
+    background-size: cover;
+    position:absolute;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.knowledges-popup p{
+    display:block;
+    color:#dbebeb;
+    font-size: large;
+}
+.thumb-block:hover .knowledges-popup{
+   animation: slide-up forwards ease 340ms;
+}
+
+@keyframes slide-up{
+    0%{
+        height:0; width: 0;
+        transform: translateY(100px);
+        opacity:0;
+    }
+    40%{
+        height:0; width: 30px;
+    }
+    100%{
+        height:200px;
+        transform:translateY(0px); 
+        opacity:1;
+    }
 }
 
 
+
+/* --------------------------------------------------------- */
 /* S K I L L S  */
+/* --------------------------------------------------------- */
 .skills, .skills-title{
     display:flex;
     width:1000px;
@@ -455,7 +545,11 @@ main h3{
     }
 }
 
+
+
+/* --------------------------------------------------------- */
 /* R E C E N T   W O R K S  */
+/* --------------------------------------------------------- */
 .recent-works, .recent-title{
     display:flex;
     flex-direction: column;
@@ -479,12 +573,12 @@ main h3{
     position: relative;
     font-weight: 600;
     text-align: center;
-    margin-top: -262px;
+    margin-top: -219px;
     z-index: 10;
 }
 .recent-title h2{
     position:relative;
-    color: #343944;
+    color: #464d5a;
     font-weight: 800;
     text-align: center;
     z-index: 9;
@@ -530,9 +624,18 @@ main h3{
     top: -36px;
     opacity:0;
 }
-.recent-thumbs-block p:hover{
-    transition: ease 400ms;
-    opacity:1;
+.recent-thumbs-block:hover p{
+    animation:forwards slide 299ms ;
+}
+@keyframes slide{
+    from{
+        opacity:0;
+        transform: translateY(36px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0px);
+    }
 }
 .sombra1{
     width: 600px;
@@ -540,11 +643,74 @@ main h3{
     display: inline-block;
     margin: -399px 486px -115px;
 }
+#mais{
+    text-align: right;
+    padding: 10px 60px;
+    cursor: pointer;
+}
+
+.mais-body{
+    background-color: #1d212a;
+    background-image: none;
+}
+.mais-container, .mais-container-web{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin:0 auto;
+    margin-bottom: 1rem;
+}
+.mais-container img{
+    transition:ease 240ms;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    padding:5px;
+}
+.mais-container img:hover{
+    transform:scale(1.01);
+    border-radius: 5px;
+    filter:drop-shadow(1px 2px 6px #00adb4);
+}
+.mais-body h2{
+    margin: 1.5rem;
+    text-align: center;
+}
+.mais-body h3{
+    margin: 1.5rem;
+    font-size: .8rem;
+    border-bottom: 1px solid #00adb4;
+}
+.mais-container-web a, .mais-container-web img{
+    width: 60%;
+    position:relative;
+    margin:1rem auto;
+    text-decoration: none;
+}
+.mais-container-web img{
+    transition:ease 250ms;
+    width:100%;
+}
+.mais-container-web img:hover{
+    transform:scale(1.01);
+    filter:drop-shadow(1px 1px 6px #00adb4)
+
+}
+.mais-container-web a p{
+    text-decoration: none;
+    text-align: center;
+    font-size: .8rem;
+}
 
 
+
+
+/* --------------------------------------------------------- */
 /* C O N T A C T   M E  */
+/* --------------------------------------------------------- */
 .contact, .contact-title{
     display:flex;
+    position:relative;
     flex-direction: column;
     width:1000px;
     height: 237px;
@@ -564,8 +730,8 @@ main h3{
     color: #dff0f6;
     position: relative;
     font-weight: 600;
-    text-align: center;    
-    margin-top: -55px;
+    text-align: center;
+    margin-top: 155px;
     z-index: 10;
 }
 .contact-title h2{
@@ -582,27 +748,37 @@ main h3{
     text-shadow: 2px 2px 6px rgb(22, 22, 22);
 }
 .contact img{
+    animation: ease flip-hor-ver 5s infinite;
+    position: relative;
+    display: inline;
+    margin: 0 auto;
     width: 412px;
     height: 327px;
-    margin: -140px 312px -66px;
 }
+@keyframes flip-hor-ver{
+    50%{
+        transform:rotateY(1turn);
+    }
+    55%{
+        transform:scale(1.1);
+    }
+    65%{
+        transform:scale(1);
+    }
+    100%{
+        transform:rotateZ(1turn);
+    }
+}
+
 .contact-email{
-    display: inline-block;
+    display: flex;
     position: relative;
-
-    /* flex-direction: column; */
-    margin:0 auto;
-
     justify-content: center;
     top: -106px;
 }
 .contact-phone{
-    display: inline-block;
+    display: flex;
     position: relative;
-
-
-    /* flex-direction: column; */
-    margin:0 auto;
     justify-content: center;
     top: -69px;
 }
@@ -618,13 +794,15 @@ main h3{
 
 .contact-email img{
     position:relative;
-    display:inline-block;
+    display:flex;
     width:20px;
     height: 20px;
+    top: -20px;
 }
 .contact-phone img{
-    display:inline;
+    display:flex;
     position:relative;
     width:20px;
     height: 20px;
+    top: -20px;
 }
