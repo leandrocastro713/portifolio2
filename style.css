@@ -427,8 +427,9 @@ main h3{
     margin: 40px 15px 0 115px;
 }
 .skills-gauges{
-    position:relative;
+    position: relative;
     margin-top: 40px;
+    line-height: 1.4;
 }
 .gauge-background{
     background-color: #212832;
@@ -566,7 +567,7 @@ main h3{
     background-blend-mode: hard-light;
 }
 .recent-title{
-    height: 50px;
+    height: 162px;
 }
 .recent-title h1, .recent-title h2 {
     color: #dff0f6;
@@ -774,35 +775,38 @@ main h3{
     display: flex;
     position: relative;
     justify-content: center;
-    top: -106px;
+    top: -48px;
 }
 .contact-phone{
     display: flex;
     position: relative;
     justify-content: center;
-    top: -69px;
+    top: -195px;
 }
 .contact-email p{
     display: inline-block;
     position: relative;
+    top: -126px;
+    left: -356px;
 }
 .contact-phone p{
     display: inline-block;
     position: relative;
-
+    left: -406px;
+    top: -48px;
 }
 
 .contact-email img{
-    position:relative;
-    display:flex;
-    width:20px;
+    position: relative;
+    display: flex;
+    width: 20px;
     height: 20px;
-    top: -20px;
+    top: -123px;
 }
 .contact-phone img{
-    display:flex;
-    position:relative;
-    width:20px;
+    display: flex;
+    position: relative;
+    width: 20px;
     height: 20px;
-    top: -20px;
+    top: -43px;
 }
