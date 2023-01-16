@@ -752,16 +752,20 @@ main h3{
 }
 @keyframes flip-hor-ver{
     50%{
-        transform:rotateY(1turn);
+        transform:scale(1);
     }
     55%{
         transform:scale(1.1);
+        
     }
-    65%{
+    75%{
         transform:scale(1);
     }
+    79%{
+        transform:scale(1.1);
+    }
     100%{
-        transform:rotateZ(1turn);
+        transform:scale(1);
     }
 }
 
