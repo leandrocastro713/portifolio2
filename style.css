@@ -173,22 +173,15 @@ main h3{
     width: 305px;
 }
 .pic img{
-    transition:ease 200ms;
     animation: ease flip-horizontal 5s infinite;
-    animation-play-state: paused;
+    transition:ease 200ms;
     position:relative;
     margin-bottom: -301px;
     z-index: 4;
 }
 .pic img:hover{
-    animation-play-state: running;
-    /* filter:drop-shadow(1px 3px 16px #00adb4); */
+    animation-play-state: paused;
 }
-/* .losango{
-    width:350px; 
-    position:relative;
-    z-index: 2;
-} */
 @keyframes flip-horizontal{
     to{
         transform: rotateY(1turn);;
@@ -430,7 +423,7 @@ main h3{
 .skills-gauges{
     position: relative;
     margin-top: 40px;
-    line-height: 1.4;
+    line-height: 2;
 }
 .gauge-background{
     background-color: #212832;
@@ -601,7 +594,6 @@ main h3{
     z-index: 8;
 }
 .recent-thumbs-block{
-    cursor:pointer;
     width: 200px;
     height: 200px;
     margin: 15px 15px;
