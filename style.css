@@ -175,12 +175,13 @@ main h3{
 .pic img{
     transition:ease 200ms;
     animation: ease flip-horizontal 5s infinite;
+    animation-play-state: paused;
     position:relative;
     margin-bottom: -301px;
     z-index: 4;
 }
 .pic img:hover{
-    animation-play-state: paused;
+    animation-play-state: running;
     /* filter:drop-shadow(1px 3px 16px #00adb4); */
 }
 /* .losango{
@@ -648,6 +649,7 @@ main h3{
     text-align: right;
     padding: 10px 60px;
     cursor: pointer;
+    z-index: 20;
 }
 
 .mais-body{
