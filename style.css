@@ -820,6 +820,27 @@ main h3{
 }
 
 @media(max-width:680px){
+    .top{
+        margin: 0px; padding: 10px; width:100%; height: 840px;
+    }
+    .hello{
+        width:90%;
+    }
+    .hello h1{
+        font-size: 84px; left:0px;
+    }
+    .hello h2{
+        font-size: 44px;
+    }
+    .citar{
+        height: 172px;
+    }
+    .citar q{
+        left:19px;top:24px;width:90%;
+    }
+    .citar i{
+        left:40px;top:14px;width:90%;
+    }
     .skills-img {
         display: none;
     }
@@ -832,32 +853,41 @@ main h3{
     main{
         display:flex;
         flex-direction: column;
-        width:100%;
+        width:100%; height: 1060px;
         align-items: center;
-        height: 1060px;
+
     }
     .pic img{
         display:block;
         align-self: center;
-        left:-30px;
-        top:0;
-        margin:0 auto;
+        left:-30px; top:0; margin:0 auto;
     }
     .follow-aside{
         margin: 0 auto;
     }
     .what-thumbs{
         flex-wrap: wrap;
-        height: 480px;
+        height: 780px;
         margin-bottom: 90px;
     }
-    
+    .follow-aside{
+        display: flex;
+        margin:0; height: 60px; width: 150px;
+        justify-content: space-between;
+    }
+    .follow-text{
+        transform: rotate(0deg);
+    }
+    .recent-thumbs-block, .recent-thumbs-block img{
+        width:170px; height: 170px;
+    }
+  
 }
-@media(max-width:500px){
+/* @media(max-width:500px){
     body{
         display:flex;
         flex-direction: column;
         max-width: 100vw;
         overflow-x: hidden;
     }
-}
+} */
