@@ -878,16 +878,43 @@ main h3{
     .follow-text{
         transform: rotate(0deg);
     }
+    .recent-works{
+        padding-bottom: 40px;
+    }
     .recent-thumbs-block, .recent-thumbs-block img{
         width:170px; height: 170px;
     }
-  
-}
-/* @media(max-width:500px){
-    body{
-        display:flex;
-        flex-direction: column;
-        max-width: 100vw;
-        overflow-x: hidden;
+    .contact {
+        color:#212832;
     }
-} */
+    .contact img{
+        display:none;
+    }
+    .contact-title{
+        margin-top:0px;
+    }
+    .contact-title h1{
+        margin-top: -165px;
+    }
+    .contact-email, .contact-email p, .contact-phone, .contact-phone p{
+        left:0 ; top: 0; color:#00adb4;
+        text-shadow: 1px 4px #343944 , -1px -2px #1d212a;
+    }
+    .contact-email p{
+        top: -32px;
+    }
+    
+}
+@media(max-width:600px){
+    .what-thumbs{
+        height: 486px;
+    }
+}
+@media(max-width:400px){
+    .what-thumbs{
+        height: 760px;
+    }
+    .recent-thumbs-block, .recent-thumbs-block img{
+        width:140px; height: 140px;
+    }
+}
