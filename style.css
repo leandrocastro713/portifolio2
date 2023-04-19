@@ -60,7 +60,7 @@ header{
     height: 60px;
     width:100%;
     max-width: 1000px;
-    margin:0 auto;
+    margin:0 auto; padding: 40px 10px;
     align-items: center;
     z-index: 20;
 }
@@ -662,12 +662,13 @@ main h3{
     filter:drop-shadow(1px 2px 6px #00adb4);
 }
 .mais-body h2{
+    font-size: 1.8rem;
     margin: 1.5rem;
     text-align: center;
 }
 .mais-body h3{
     margin: 1.5rem;
-    font-size: .8rem;
+    font-size: 1rem;
     border-bottom: 1px solid #00adb4;
 }
 .mais-container-web a, .mais-container-web img{
@@ -686,9 +687,10 @@ main h3{
 
 }
 .mais-container-web a p{
+    margin-top: -16px;
     text-decoration: none;
     text-align: center;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 /* --------------------------------------------------------- */
