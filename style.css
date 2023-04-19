@@ -179,6 +179,7 @@ main h3{
     transition:ease 200ms;
     position:relative;
     margin-bottom: -301px;
+    left: -40px;
     z-index: 4;
 }
 .pic img:hover{
