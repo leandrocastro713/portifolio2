@@ -813,13 +813,17 @@ main h3{
         width:180px; height:180px;
     }
     .mais-container-web { 
-        padding:0px; 
+        padding:0px; width:100%; margin:0 auto;
         display:flex; flex-direction: column;
         justify-content: center;
     }
-    .mais-container-web img{
-        margin:0px; width:380px;height:200px;
-        display:block; margin:0 auto;
+    .mais-container-web a, .mais-container-web img{
+        margin:20px; width:90%;height:200px;
+        display:block; margin:20px;
+    }
+    .mais-container-web a{
+        display:flex; flex-direction: column; justify-content: center;
+        width: 90%; height: 233px;
     }
 }
 @media(max-width:400px){
