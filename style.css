@@ -809,6 +809,18 @@ main h3{
 }
 @media(max-width:600px){
     .what-thumbs{ height: 486px; }
+    .mais-container img{
+        width:180px; height:180px;
+    }
+    .mais-container-web { 
+        padding:0px; 
+        display:flex; flex-direction: column;
+        justify-content: center;
+    }
+    .mais-container-web img{
+        margin:0px; width:380px;height:200px;
+        display:block; margin:0 auto;
+    }
 }
 @media(max-width:400px){
     .what-thumbs{ height: 760px;  }
