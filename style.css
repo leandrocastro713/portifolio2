@@ -203,8 +203,6 @@ main h3{
 }
 .follow-text{
     transform: rotate(90deg);
-    /* width: 150px; */
-    
 }
 .follow-text p{
     color: var(--v-front-color-menu);
@@ -230,6 +228,11 @@ main h3{
 .follow-icons img{
     width:24px;
     margin:8px;
+    transition: ease 500ms;
+}
+.follow-icons img:hover{
+    transition: ease 500ms;
+    transform:scale(1.1);
 }
 .citar{
     display:flex;
@@ -536,15 +539,9 @@ main h3{
     background-color: #00adb4;
 }
 @keyframes fill-premiere{
-    0%{
-        width:0;
-    }
-    50%{
-        width: 50%;
-    }
-    100%{
-        width:50%;
-    }
+    0%{  width:0;  }
+    50%{  width: 50%; }
+    100%{  width:50%;  }
 }
 
 
@@ -631,14 +628,8 @@ main h3{
     animation:forwards slide 299ms ;
 }
 @keyframes slide{
-    from{
-        opacity:0;
-        transform: translateY(36px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0px);
-    }
+    from{ opacity:0; transform: translateY(36px); }
+    to{  opacity:1; transform:translateY(0px);  }
 }
 
 #mais{
@@ -647,7 +638,6 @@ main h3{
     cursor: pointer;
     z-index: 20;
 }
-
 .mais-body{
     background-color: #1d212a;
     background-image: none;
@@ -701,9 +691,6 @@ main h3{
     font-size: .8rem;
 }
 
-
-
-
 /* --------------------------------------------------------- */
 /* C O N T A C T   M E  */
 /* --------------------------------------------------------- */
@@ -726,10 +713,8 @@ main h3{
      top:-47px;
 }
 .contact-title h1, .contact-title h2 {
-    color: #dff0f6;
+    color: #dff0f6; font-weight: 600; text-align: center;
     position: relative;
-    font-weight: 600;
-    text-align: center;
     z-index: 10;
     top:5px;
 }
@@ -739,49 +724,23 @@ main h3{
     text-align: center;
     top:-48px;
     z-index: 9;
-    
 }
 .contact-title h1:hover{
     transition: ease 200ms;
     text-shadow: 2px 2px 6px rgb(22, 22, 22);
 }
-.contact img{
-    animation: ease flip-hor-ver 5s infinite;
-    position: relative;
-    display: inline;
-    margin: 0 auto;
-    width: 412px; height: 327px;
-    
-}
-@keyframes flip-hor-ver{
-    50%{
-        transform:scale(1);
-    }
-    55%{
-        transform:scale(1.1);
-        
-    }
-    75%{
-        transform:scale(1);
-    }
-    79%{
-        transform:scale(1.1);
-    }
-    100%{
-        transform:scale(1);
-    }
-}
-
 .contact-email{
     text-align: center;
     display: inline-block; position: relative;
     justify-content: center;
+    cursor:pointer;
     top: 0px;
 }
 .contact-phone{
     text-align: center;
     display: inline-block; position: relative;
     justify-content: center;
+    cursor:pointer;
     top: 0px;
 }
 .contact-email p{
@@ -789,20 +748,23 @@ main h3{
     display: inline-block;
     position: relative;
     top: 0px; left: 0px;
-    
+    cursor:pointer;
 }
 .contact-phone p{
     text-shadow: 1px 2px #343944 , -1px -2px #1d212a;
     display: inline-block;
     position: relative;
     left: 0px; top: 0px;
+    cursor:pointer;
 }
-
 .contact-email img{
     display: inline-block;
     position: relative;
     width: 20px; height: 20px;
     top: 2px;
+}
+.contact-phone a{
+    text-decoration: none;
 }
 .contact-phone img{
     display: inline-block;
@@ -810,99 +772,46 @@ main h3{
     width: 20px; height: 20px;
     top: 2px;
 }
-
 @media(max-width:680px){
-    .top{
-        margin: 0px; padding: 10px; width:100%; 
+    .top{ margin: 0px; padding: 10px; width:100%; 
         display:flex; flex-direction: column;
         align-items: center;
-        height: 1060px;
-    }
-    .hello{
-        width:90%;
-    }
-    .hello h1{
-        font-size: 84px; left:0px;
-    }
-    .hello h2{
-        font-size: 44px;
-    }
-    .citar{
-        height: 172px;
-    }
-    .citar q{
-        left:19px;top:24px;width:90%;
-    }
-    .citar i{
-        left:40px;top:14px;width:90%;
-    }
-    .skills-img {
-        display: none;
-    }
-    .skills-description{
-        justify-content: center;
-    }
-    .skills-names{
-        margin-left:15px;
-    }
-    .pic img{
-        display:block;
-        align-self: center;
-        left:-30px; top:0; margin:0 auto;
-    }
-    .follow-aside{
-        margin: 0 auto;
-    }
-    .what-thumbs{
-        flex-wrap: wrap;
-        height: 780px;
-        margin-bottom: 90px;
-    }
+        height: 860px;  }
+    .hello{  width:90%;  }
+    .hello h1{ font-size: 84px; left:0px;  }
+    .hello h2{ font-size: 44px; }
+    .citar{ height: 172px; }
+    .citar q{ left:19px;top:24px;width:90%; }
+    .citar i{ left:40px;top:14px;width:90%;  }
+    .skills-img { display: none; }
+    .skills-description{ justify-content: center; }
+    .skills-names{ margin-left:15px; }
+    .pic img{ display:block; align-self: center;
+        left:-30px; top:0; margin:0 auto; }
+    .follow-aside{ margin: 0 auto; }
+    .what-thumbs{ 
+        flex-wrap: wrap; height: 780px; margin-bottom: 90px; }
     .follow-aside{
         display: flex;
         margin:0; height: 60px; width: 150px;
-        justify-content: space-between;
-    }
-    .follow-text{
-        transform: rotate(0deg);
-    }
-    .recent-works{
-        padding-bottom: 40px;
-    }
+        justify-content: space-between; }
+    .follow-text{ transform: rotate(0deg); }
+    .recent-works{ padding-bottom: 40px; }
     .recent-thumbs-block, .recent-thumbs-block img{
-        width:170px; height: 170px;
-    }
-    .contact {
-        height: 200px;
-        color:#212832;
-    }
-    .contact img{
-        display:none;
-    }
-    .contact-title{
-        top:-43px;
-    }
-    .contact-title h1{
-        top: 4px;
-    }
+        width:170px; height: 170px;  }
+    .contact { height: 200px; color:#212832;  }
+    .contact img{ display:none;  }
+    .contact-title{ top:-43px;  }
+    .contact-title h1{ top: 4px; }
     .contact-email, .contact-email p, .contact-phone, .contact-phone p{
-        left:0 ; top: 0; color:#00adb4; 
-    }
-    .contact-email p{
-        top: -7px;
-    }
-    
+        left:0 ; top: 0; color:#00adb4;  }
+    .contact-email p{ top: -7px; }
 }
 @media(max-width:600px){
-    .what-thumbs{
-        height: 486px;
-    }
+    .what-thumbs{ height: 486px; }
 }
 @media(max-width:400px){
-    .what-thumbs{
-        height: 760px;
-    }
+    .what-thumbs{ height: 760px;  }
     .recent-thumbs-block, .recent-thumbs-block img{
-        width:140px; height: 140px;
-    }
+        width:140px; height: 140px;  }
 }
