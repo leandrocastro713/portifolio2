@@ -811,10 +811,9 @@ main h3{
     .contact-email p{ top: -7px; }
 }
 @media(max-width:600px){
-    .what-thumbs{ height: 486px; }
-    .mais-container img{
-        width:180px; height:180px;
-    }
+    .what-thumbs{ display:block; flex-direction: column; height: 625px;}
+    .mais-container img{ width:180px; height:180px;  }
+    .thumb-block{ margin: 20px auto 10px;}
     .mais-container-web { 
         padding:0px; width:100%; margin:0 auto;
         display:flex; flex-direction: column;
@@ -830,7 +829,7 @@ main h3{
     }
 }
 @media(max-width:400px){
-    .what-thumbs{ height: 760px;  }
+    /* .what-thumbs{ height: 760px;  } */
     .recent-thumbs-block, .recent-thumbs-block img{
         width:140px; height: 140px;  }
 }
